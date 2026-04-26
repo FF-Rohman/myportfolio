@@ -1,0 +1,182 @@
+[
+  {
+    "title": "Subnetting Basics: What I Finally Understood",
+    "slug": "subnetting-basics",
+    "date": "2026-04-20",
+    "category": "Networking",
+    "excerpt": "A beginner-friendly explanation of subnetting, CIDR notation, network addresses, and why smaller networks are useful.",
+    "url": "posts/subnetting-basics.html",
+    "readTime": "8 min read"
+  },
+  {
+    "title": "My First Wireshark Capture",
+    "slug": "wireshark-first-capture",
+    "date": "2026-04-12",
+    "category": "Labs",
+    "excerpt": "Notes from a first packet capture lab, including simple display filters and what DNS traffic looked like.",
+    "url": "posts/wireshark-first-capture.html",
+    "readTime": "7 min read"
+  },
+  {
+    "title": "Linux Terminal Notes for Beginners",
+    "slug": "linux-terminal-notes",
+    "date": "2026-04-05",
+    "category": "Tutorials",
+    "excerpt": "A practical starter list of Linux commands useful for networking and cybersecurity labs.",
+    "url": "posts/linux-terminal-notes.html",
+    "readTime": "7 min read"
+  },
+  {
+    "title": "OSI Model Explained With Real Network Examples",
+    "slug": "osi-model-real-examples",
+    "date": "2026-03-28",
+    "category": "Networking",
+    "excerpt": "A practical explanation of the seven OSI layers using web browsing, DNS, TCP, IP, Ethernet, and cables as examples.",
+    "url": "posts/osi-model-real-examples.html",
+    "readTime": "8 min read"
+  },
+  {
+    "title": "TCP vs UDP: How I Remember the Difference",
+    "slug": "tcp-vs-udp",
+    "date": "2026-03-21",
+    "category": "Networking",
+    "excerpt": "TCP and UDP explained through reliability, speed, ports, handshakes, and real beginner-friendly examples.",
+    "url": "posts/tcp-vs-udp.html",
+    "readTime": "7 min read"
+  },
+  {
+    "title": "DNS Basics: What Happens When I Type a Website Name",
+    "slug": "dns-basics",
+    "date": "2026-03-14",
+    "category": "Networking",
+    "excerpt": "A step-by-step beginner explanation of DNS lookup, resolvers, records, caching, and troubleshooting commands.",
+    "url": "posts/dns-basics.html",
+    "readTime": "8 min read"
+  },
+  {
+    "title": "DHCP Basics: How Devices Get IP Addresses",
+    "slug": "dhcp-basics",
+    "date": "2026-03-07",
+    "category": "Networking",
+    "excerpt": "A beginner guide to DHCP discovery, offers, leases, gateways, DNS settings, and common IP address problems.",
+    "url": "posts/dhcp-basics.html",
+    "readTime": "7 min read"
+  },
+  {
+    "title": "VLANs for Beginners: Why One Switch Can Hold Many Networks",
+    "slug": "vlans-for-beginners",
+    "date": "2026-02-28",
+    "category": "Networking",
+    "excerpt": "An introductory VLAN explanation covering broadcast domains, access ports, trunk ports, and simple lab design.",
+    "url": "posts/vlans-for-beginners.html",
+    "readTime": "8 min read"
+  },
+  {
+    "title": "Default Gateway Explained Without Overcomplicating It",
+    "slug": "default-gateway-explained",
+    "date": "2026-02-21",
+    "category": "Networking",
+    "excerpt": "A clear explanation of why hosts need a default gateway and how packets leave a local network.",
+    "url": "posts/default-gateway-explained.html",
+    "readTime": "6 min read"
+  },
+  {
+    "title": "Common Ports Every Beginner Should Know",
+    "slug": "common-ports-beginners",
+    "date": "2026-02-14",
+    "category": "Security",
+    "excerpt": "A practical list of common service ports with what they do and why security learners should recognize them.",
+    "url": "posts/common-ports-beginners.html",
+    "readTime": "8 min read"
+  },
+  {
+    "title": "CIA Triad: Confidentiality, Integrity, and Availability",
+    "slug": "cia-triad",
+    "date": "2026-02-07",
+    "category": "Security",
+    "excerpt": "The CIA triad explained with beginner examples from passwords, file checks, backups, and service outages.",
+    "url": "posts/cia-triad.html",
+    "readTime": "7 min read"
+  },
+  {
+    "title": "Password Security Notes From a Beginner",
+    "slug": "password-security-notes",
+    "date": "2026-01-31",
+    "category": "Security",
+    "excerpt": "Simple password security lessons: reuse risk, password managers, MFA, hashes, and safer habits.",
+    "url": "posts/password-security-notes.html",
+    "readTime": "7 min read"
+  },
+  {
+    "title": "Phishing Awareness: How I Check Suspicious Messages",
+    "slug": "phishing-awareness",
+    "date": "2026-01-24",
+    "category": "Security",
+    "excerpt": "A beginner checklist for reviewing suspicious email and messages without clicking unsafe links.",
+    "url": "posts/phishing-awareness.html",
+    "readTime": "7 min read"
+  },
+  {
+    "title": "Basic Firewall Rules Explained",
+    "slug": "basic-firewall-rules",
+    "date": "2026-01-17",
+    "category": "Security",
+    "excerpt": "Firewall rules explained through source, destination, ports, direction, action, and least privilege.",
+    "url": "posts/basic-firewall-rules.html",
+    "readTime": "8 min read"
+  },
+  {
+    "title": "Nmap Basics in a Safe Home Lab",
+    "slug": "nmap-basics-home-lab",
+    "date": "2026-01-10",
+    "category": "Labs",
+    "excerpt": "How I use Nmap responsibly in a lab to discover hosts, identify open ports, and document results.",
+    "url": "posts/nmap-basics-home-lab.html",
+    "readTime": "8 min read"
+  },
+  {
+    "title": "Building a Small Virtual Lab for Cybersecurity Practice",
+    "slug": "small-virtual-lab",
+    "date": "2026-01-03",
+    "category": "Labs",
+    "excerpt": "A beginner virtual lab plan using Linux VMs, snapshots, isolated networks, and careful documentation.",
+    "url": "posts/small-virtual-lab.html",
+    "readTime": "9 min read"
+  },
+  {
+    "title": "Packet Tracer Lab: Two Networks With One Router",
+    "slug": "packet-tracer-two-networks",
+    "date": "2025-12-27",
+    "category": "Labs",
+    "excerpt": "A simple routing lab with two LANs, one router, IP addressing, gateway configuration, and ping testing.",
+    "url": "posts/packet-tracer-two-networks.html",
+    "readTime": "8 min read"
+  },
+  {
+    "title": "How I Document a Networking Lab",
+    "slug": "document-networking-lab",
+    "date": "2025-12-20",
+    "category": "Tutorials",
+    "excerpt": "A repeatable lab documentation template covering objective, topology, commands, screenshots, results, and lessons learned.",
+    "url": "posts/document-networking-lab.html",
+    "readTime": "7 min read"
+  },
+  {
+    "title": "Git and GitHub Basics for My Portfolio",
+    "slug": "git-github-basics",
+    "date": "2025-12-13",
+    "category": "Tutorials",
+    "excerpt": "The Git workflow I use to track notes, publish projects, and keep my beginner portfolio organized.",
+    "url": "posts/git-github-basics.html",
+    "readTime": "7 min read"
+  },
+  {
+    "title": "Troubleshooting Checklist When the Internet Is Not Working",
+    "slug": "internet-troubleshooting-checklist",
+    "date": "2025-12-06",
+    "category": "Tutorials",
+    "excerpt": "A beginner troubleshooting checklist for physical links, IP settings, gateway, DNS, ping, and traceroute.",
+    "url": "posts/internet-troubleshooting-checklist.html",
+    "readTime": "8 min read"
+  }
+]

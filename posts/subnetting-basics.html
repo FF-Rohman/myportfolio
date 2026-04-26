@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="A beginner-friendly explanation of subnetting basics, CIDR notation, and why subnetting matters.">
+    <meta property="og:title" content="Subnetting Basics: What I Finally Understood">
+    <meta property="og:description" content="A beginner networking student explains subnetting basics in plain language.">
+    <meta property="og:type" content="article">
+    <title>Subnetting Basics: What I Finally Understood | FF Rohman</title>
+    <link rel="icon" type="image/png" href="../assets/img/favicon.png">
+    <link rel="apple-touch-icon" href="../assets/img/apple-touch-icon.png">
+    <link rel="stylesheet" href="../assets/css/styles.css">
+  </head>
+  <body>
+    <div class="site-shell">
+      <div data-component="navbar"></div>
+
+      <main id="main-content" class="article-page">
+        <article class="article reveal">
+          <a class="back-link" href="../blog.html">Back to blog</a>
+          <p class="eyebrow">Networking · 2026-04-20</p>
+          <h1>Subnetting Basics: What I Finally Understood</h1>
+          <p class="article__intro">
+            Subnetting felt confusing at first because I tried to memorize shortcuts before understanding the reason behind it. This note explains the idea in beginner-friendly terms.
+          </p>
+
+          <h2>Why subnetting exists</h2>
+          <p>
+            Subnetting is a way to divide one larger network into smaller logical networks. Instead of giving every device one huge shared space, we create smaller groups that are easier to manage, route, and secure.
+          </p>
+
+          <h2>The key idea</h2>
+          <p>
+            An IP address has a network portion and a host portion. The subnet mask, or CIDR prefix, tells us where that split happens. For example, <code>192.168.1.0/24</code> means the first 24 bits identify the network, leaving 8 bits for host addresses.
+          </p>
+
+          <h2>Understanding the slash number</h2>
+          <p>
+            The slash number in CIDR notation tells us how many bits are reserved for the network. IPv4 addresses are 32 bits long. If the prefix is <code>/24</code>, then 24 bits are for the network and 8 bits are left for hosts. If the prefix is <code>/26</code>, then 26 bits are for the network and 6 bits are left for hosts.
+          </p>
+          <p>
+            Host bits decide how many addresses are available inside the subnet. The formula I use is <code>2^host_bits</code>. In most normal LAN examples, two addresses are not usable by hosts: the network address and the broadcast address. So a <code>/24</code> has 256 total addresses and 254 usable host addresses.
+          </p>
+
+          <h2>Example calculation</h2>
+          <p>
+            If I have <code>192.168.1.0/26</code>, there are 6 host bits left. That gives <code>2^6 = 64</code> total addresses per subnet. The first subnet starts at <code>192.168.1.0</code>, the broadcast address is <code>192.168.1.63</code>, and usable hosts are <code>192.168.1.1</code> through <code>192.168.1.62</code>.
+          </p>
+          <p>
+            The next subnet starts after 64 addresses: <code>192.168.1.64/26</code>. Then <code>192.168.1.128/26</code>, and then <code>192.168.1.192/26</code>. This pattern is easier to see when I write the block size down first.
+          </p>
+
+          <h2>What I practiced</h2>
+          <ul>
+            <li>Converting CIDR prefixes into subnet masks.</li>
+            <li>Finding network addresses and broadcast addresses.</li>
+            <li>Estimating usable host counts.</li>
+            <li>Checking my answers with a subnet calculator after solving manually.</li>
+          </ul>
+
+          <h2>Common beginner mistakes</h2>
+          <ul>
+            <li>Using the network address as a host address.</li>
+            <li>Forgetting the broadcast address at the end of the subnet.</li>
+            <li>Mixing up total addresses and usable host addresses.</li>
+            <li>Trying to memorize shortcuts before understanding the block size.</li>
+          </ul>
+
+          <h2>Lesson learned</h2>
+          <p>
+            The math matters, but the purpose matters more: subnetting is about organizing networks into useful boundaries. Once I understood that, the calculations started to feel less random.
+          </p>
+        </article>
+      </main>
+
+      <div data-component="footer"></div>
+    </div>
+
+    <script src="../assets/js/main.js" defer></script>
+  </body>
+</html>

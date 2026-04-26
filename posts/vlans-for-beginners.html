@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="VLANs explained for beginner networking students.">
+    <title>VLANs for Beginners: Why One Switch Can Hold Many Networks | FF Rohman</title>
+    <link rel="icon" type="image/png" href="../assets/img/favicon.png">
+    <link rel="apple-touch-icon" href="../assets/img/apple-touch-icon.png">
+    <link rel="stylesheet" href="../assets/css/styles.css">
+  </head>
+  <body>
+    <div class="site-shell">
+      <div data-component="navbar"></div>
+      <main id="main-content" class="article-page">
+        <article class="article reveal">
+          <a class="back-link" href="../blog.html">Back to blog</a>
+          <p class="eyebrow">Networking · 2026-02-28</p>
+          <h1>VLANs for Beginners: Why One Switch Can Hold Many Networks</h1>
+          <p class="article__intro">A VLAN lets one physical switch act like multiple separate logical switches.</p>
+          <h2>Why VLANs are useful</h2>
+          <p>VLANs separate broadcast domains. A school, office, or lab might place students, staff, servers, and guests into different VLANs to organize traffic and apply different rules.</p>
+          <p>
+            Without VLANs, many devices on the same switch may be part of the same Layer 2 network. That can make the network harder to manage. VLANs let administrators separate groups without needing a different physical switch for every group.
+          </p>
+          <h2>Access and trunk ports</h2>
+          <p>An access port belongs to one VLAN and is usually connected to an end device. A trunk port carries traffic for multiple VLANs between switches or between a switch and router.</p>
+          <p>
+            Access ports are simple from the end device point of view. The PC or printer does not need to know about VLAN tags. Trunk ports are different because they carry tagged frames, allowing multiple VLANs to cross one physical link.
+          </p>
+          <h2>Beginner lab</h2>
+          <p>In Packet Tracer, I can create VLAN 10 for PCs and VLAN 20 for lab servers. Devices in the same VLAN can communicate directly. Devices in different VLANs need routing between VLANs.</p>
+          <h2>What inter-VLAN routing means</h2>
+          <p>
+            VLANs separate networks, so a device in VLAN 10 cannot automatically talk to a device in VLAN 20. To allow controlled communication, a router or Layer 3 switch can route between VLANs. This is where firewall rules or access control lists can become important.
+          </p>
+          <h2>Common beginner mistakes</h2>
+          <ul>
+            <li>Creating a VLAN but forgetting to assign switch ports to it.</li>
+            <li>Configuring a trunk on one side of a link but not the other.</li>
+            <li>Expecting different VLANs to communicate without routing.</li>
+            <li>Not documenting which VLAN ID belongs to which purpose.</li>
+          </ul>
+          <h2>Lesson learned</h2>
+          <p>VLANs are not just a security tool. They are also an organization tool. They make a network easier to manage when used with clear naming and documentation.</p>
+        </article>
+      </main>
+      <div data-component="footer"></div>
+    </div>
+    <script src="../assets/js/main.js" defer></script>
+  </body>
+</html>

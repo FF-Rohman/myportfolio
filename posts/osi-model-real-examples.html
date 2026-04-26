@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="The OSI model explained with beginner-friendly real network examples.">
+    <title>OSI Model Explained With Real Network Examples | FF Rohman</title>
+    <link rel="icon" type="image/png" href="../assets/img/favicon.png">
+    <link rel="apple-touch-icon" href="../assets/img/apple-touch-icon.png">
+    <link rel="stylesheet" href="../assets/css/styles.css">
+  </head>
+  <body>
+    <div class="site-shell">
+      <div data-component="navbar"></div>
+      <main id="main-content" class="article-page">
+        <article class="article reveal">
+          <a class="back-link" href="../blog.html">Back to blog</a>
+          <p class="eyebrow">Networking · 2026-03-28</p>
+          <h1>OSI Model Explained With Real Network Examples</h1>
+          <p class="article__intro">The OSI model became easier for me when I stopped treating it like a memory test and started using it as a troubleshooting map.</p>
+          <h2>The simple idea</h2>
+          <p>The OSI model splits network communication into seven layers. Each layer has a job. If something breaks, the layers help me ask better questions instead of guessing randomly.</p>
+          <p>
+            The layers are Physical, Data Link, Network, Transport, Session, Presentation, and Application. Beginners often memorize the names but miss the purpose. The purpose is to separate responsibilities. Cables and signals are not the same problem as IP routing, and IP routing is not the same problem as a web server error.
+          </p>
+          <h2>Example: opening a website</h2>
+          <p>When I open a website, the application layer includes HTTP or HTTPS. DNS helps find the server name. TCP provides a reliable connection. IP handles addressing and routing. Ethernet or Wi-Fi moves frames on the local network. The physical layer is the actual signal over cable or wireless.</p>
+          <p>
+            If the cable is unplugged, that is a lower-layer problem. If the cable works but the IP address is wrong, that is a network-layer problem. If the IP path works but the website port is closed, that points closer to the transport or application layer. This is why the model helps in real troubleshooting.
+          </p>
+          <h2>How I use it for troubleshooting</h2>
+          <ul>
+            <li>Layer 1: Is the cable connected or Wi-Fi enabled?</li>
+            <li>Layer 2: Is the device connected to the right network or VLAN?</li>
+            <li>Layer 3: Does the device have the correct IP address and gateway?</li>
+            <li>Layer 4: Is the required port reachable?</li>
+            <li>Layer 7: Is the service or application actually working?</li>
+          </ul>
+          <h2>Beginner example checklist</h2>
+          <p>
+            If a laptop cannot open a website, I can check layers in order. First, confirm Wi-Fi is connected. Next, confirm the laptop has an IP address. Then ping the gateway. Then ping a public IP address. Then test DNS. Finally, try the website again or test another website. Each step removes one possible cause.
+          </p>
+          <h2>Common mistake</h2>
+          <p>
+            A common mistake is jumping straight to the application. For example, blaming the browser before checking IP settings or DNS. The OSI model reminds me to prove the lower layers first.
+          </p>
+          <h2>Lesson learned</h2>
+          <p>The OSI model is useful because it slows me down. Instead of saying “the internet is broken,” I can check one layer at a time and document what I confirmed.</p>
+        </article>
+      </main>
+      <div data-component="footer"></div>
+    </div>
+    <script src="../assets/js/main.js" defer></script>
+  </body>
+</html>

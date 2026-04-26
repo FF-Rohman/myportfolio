@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="DNS basics explained for beginner networking and cybersecurity learners.">
+    <title>DNS Basics: What Happens When I Type a Website Name | FF Rohman</title>
+    <link rel="icon" type="image/png" href="../assets/img/favicon.png">
+    <link rel="apple-touch-icon" href="../assets/img/apple-touch-icon.png">
+    <link rel="stylesheet" href="../assets/css/styles.css">
+  </head>
+  <body>
+    <div class="site-shell">
+      <div data-component="navbar"></div>
+      <main id="main-content" class="article-page">
+        <article class="article reveal">
+          <a class="back-link" href="../blog.html">Back to blog</a>
+          <p class="eyebrow">Networking · 2026-03-14</p>
+          <h1>DNS Basics: What Happens When I Type a Website Name</h1>
+          <p class="article__intro">DNS is like a naming system for the internet. It turns names that humans remember into IP addresses that computers use.</p>
+          <h2>Why DNS matters</h2>
+          <p>Without DNS, I would need to remember IP addresses for every website. DNS lets me type a name, then my computer asks a resolver for the matching address.</p>
+          <p>
+            DNS matters in both networking and cybersecurity because many problems start with names. If DNS fails, websites may not open even when the network connection is fine. If DNS is abused, users may be sent to the wrong destination.
+          </p>
+          <h2>The basic flow</h2>
+          <ol>
+            <li>The browser checks local cache.</li>
+            <li>The computer asks its configured DNS resolver.</li>
+            <li>The resolver finds the answer or asks other DNS servers.</li>
+            <li>The IP address is returned and cached for a period of time.</li>
+          </ol>
+          <p>
+            Caching is important because it reduces repeated lookups. If a name was recently resolved, the answer may be reused until the TTL expires. TTL means time to live, and it controls how long a DNS answer can be cached.
+          </p>
+          <h2>Records I am learning</h2>
+          <p><code>A</code> records point to IPv4 addresses. <code>AAAA</code> records point to IPv6 addresses. <code>CNAME</code> records point one name to another name. <code>MX</code> records are used for mail servers.</p>
+          <p>
+            For troubleshooting, I do not need to memorize every DNS record at once. I first focus on <code>A</code>, <code>AAAA</code>, <code>CNAME</code>, and <code>MX</code> because they appear often in beginner labs and real website setups.
+          </p>
+          <h2>Commands to practice</h2>
+          <p>I use <code>nslookup</code> or <code>dig</code> to ask DNS questions directly. This helps me separate a DNS problem from a general network problem.</p>
+          <h2>Example troubleshooting thought process</h2>
+          <p>
+            If I can ping <code>8.8.8.8</code> but cannot open <code>example.com</code>, the network path may be working while DNS is failing. In that case, I check the configured DNS server, try <code>nslookup example.com</code>, and compare results using another resolver.
+          </p>
+          <h2>Common mistakes</h2>
+          <ul>
+            <li>Assuming the internet is down when only DNS is failing.</li>
+            <li>Forgetting that cached DNS answers can hide changes.</li>
+            <li>Confusing a domain name with the actual server IP address.</li>
+          </ul>
+        </article>
+      </main>
+      <div data-component="footer"></div>
+    </div>
+    <script src="../assets/js/main.js" defer></script>
+  </body>
+</html>

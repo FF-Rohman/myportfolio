@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Beginner lab notes from a first Wireshark packet capture.">
+    <title>My First Wireshark Capture | FF Rohman</title>
+    <link rel="icon" type="image/png" href="../assets/img/favicon.png">
+    <link rel="apple-touch-icon" href="../assets/img/apple-touch-icon.png">
+    <link rel="stylesheet" href="../assets/css/styles.css">
+  </head>
+  <body>
+    <div class="site-shell">
+      <div data-component="navbar"></div>
+
+      <main id="main-content" class="article-page">
+        <article class="article reveal">
+          <a class="back-link" href="../blog.html">Back to blog</a>
+          <p class="eyebrow">Labs · 2026-04-12</p>
+          <h1>My First Wireshark Capture</h1>
+          <p class="article__intro">A short lab note on capturing traffic, filtering DNS, and learning to read packets without rushing.</p>
+          <h2>Setup</h2>
+          <p>I opened Wireshark, selected my active network interface, and captured traffic while visiting a few safe websites.</p>
+          <p>
+            At first, the capture window looked overwhelming because there were many packets moving at once. The important lesson was that I do not need to understand every packet immediately. A better approach is to start with one question, such as “What DNS query did my computer send?” or “Which server did my browser connect to?”
+          </p>
+          <h2>Filters used</h2>
+          <p><code>dns</code>, <code>http</code>, and <code>tcp</code> helped reduce noise and focus on one protocol at a time.</p>
+          <p>
+            Display filters do not delete packets. They only hide packets that do not match the filter. This is useful because I can capture once, then study different protocols from the same capture file. For example, <code>dns</code> lets me focus on name resolution, while <code>tcp</code> helps me see connection behavior.
+          </p>
+          <h2>What I looked for</h2>
+          <ul>
+            <li>The source IP address, which is usually my device.</li>
+            <li>The destination IP address, which is the server or DNS resolver.</li>
+            <li>The protocol column, which tells me what type of traffic I am seeing.</li>
+            <li>The info column, which gives a short summary of what happened.</li>
+          </ul>
+          <h2>Beginner practice steps</h2>
+          <ol>
+            <li>Start a capture on the correct network interface.</li>
+            <li>Open a browser and visit a safe website.</li>
+            <li>Stop the capture after a few seconds so the file stays small.</li>
+            <li>Apply the <code>dns</code> filter and identify the query and response.</li>
+            <li>Write down what IP address was returned for the domain.</li>
+          </ol>
+          <h2>What I learned</h2>
+          <p>Packet analysis is easier when I ask one clear question first, such as “What DNS query was made?” instead of trying to understand every packet at once.</p>
+          <p>
+            I also learned that Wireshark is not only for advanced security work. It is also a networking learning tool. It shows how DNS, TCP, HTTP, ARP, and other protocols actually appear on the network.
+          </p>
+        </article>
+      </main>
+
+      <div data-component="footer"></div>
+    </div>
+
+    <script src="../assets/js/main.js" defer></script>
+  </body>
+</html>

@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Beginner Linux terminal commands useful for networking and cybersecurity study.">
+    <title>Linux Terminal Notes for Beginners | FF Rohman</title>
+    <link rel="icon" type="image/png" href="../assets/img/favicon.png">
+    <link rel="apple-touch-icon" href="../assets/img/apple-touch-icon.png">
+    <link rel="stylesheet" href="../assets/css/styles.css">
+  </head>
+  <body>
+    <div class="site-shell">
+      <div data-component="navbar"></div>
+
+      <main id="main-content" class="article-page">
+        <article class="article reveal">
+          <a class="back-link" href="../blog.html">Back to blog</a>
+          <p class="eyebrow">Tutorials · 2026-04-05</p>
+          <h1>Linux Terminal Notes for Beginners</h1>
+          <p class="article__intro">A starter list of commands I keep using while practicing networking and security labs.</p>
+          <h2>Useful commands</h2>
+          <ul>
+            <li><code>pwd</code> shows the current directory.</li>
+            <li><code>ls -la</code> lists files with details.</li>
+            <li><code>ip addr</code> shows network interfaces and IP addresses.</li>
+            <li><code>ping</code> tests basic connectivity.</li>
+          </ul>
+          <h2>Networking commands I use often</h2>
+          <p>
+            <code>ip addr</code> helps me confirm whether the machine has an IP address. <code>ip route</code> shows the default gateway and routing table. <code>ping</code> checks basic reachability. <code>traceroute</code> shows the path traffic takes toward a destination. <code>ss -tuln</code> shows listening TCP and UDP ports.
+          </p>
+          <h2>How I think while using commands</h2>
+          <p>
+            A command is useful only if I understand what question it answers. For example, <code>ping 8.8.8.8</code> can test whether I can reach an external IP address, but it does not prove DNS is working. If an IP ping works but a domain name fails, DNS may be the problem.
+          </p>
+          <h2>Small troubleshooting flow</h2>
+          <ol>
+            <li>Run <code>ip addr</code> to confirm the interface has an IP address.</li>
+            <li>Run <code>ip route</code> to confirm there is a default gateway.</li>
+            <li>Ping the gateway to test local network reachability.</li>
+            <li>Ping a public IP address to test outside connectivity.</li>
+            <li>Use <code>dig</code> or <code>nslookup</code> to test DNS.</li>
+          </ol>
+          <h2>Practice note</h2>
+          <p>I am focusing on understanding what each command tells me instead of memorizing long command lists.</p>
+          <p>
+            My goal is to build a habit: run a command, write down what I expected, compare it with the result, and explain what the result proves. That habit makes terminal practice more useful for networking and cybersecurity.
+          </p>
+        </article>
+      </main>
+
+      <div data-component="footer"></div>
+    </div>
+
+    <script src="../assets/js/main.js" defer></script>
+  </body>
+</html>

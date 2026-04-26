@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="How to build a small virtual lab for cybersecurity practice.">
+    <title>Building a Small Virtual Lab for Cybersecurity Practice | FF Rohman</title>
+    <link rel="icon" type="image/png" href="../assets/img/favicon.png">
+    <link rel="apple-touch-icon" href="../assets/img/apple-touch-icon.png">
+    <link rel="stylesheet" href="../assets/css/styles.css">
+  </head>
+  <body>
+    <div class="site-shell">
+      <div data-component="navbar"></div>
+      <main id="main-content" class="article-page">
+        <article class="article reveal">
+          <a class="back-link" href="../blog.html">Back to blog</a>
+          <p class="eyebrow">Labs · 2026-01-03</p>
+          <h1>Building a Small Virtual Lab for Cybersecurity Practice</h1>
+          <p class="article__intro">A virtual lab lets me practice safely without touching real production systems.</p>
+          <h2>Basic design</h2>
+          <p>My beginner lab uses one Linux workstation VM, one target VM, and an isolated virtual network. Isolation matters because lab traffic should not accidentally affect other devices.</p>
+          <p>
+            A simple lab is better than a complicated lab that I do not understand. I can start with two machines: one machine for tools and one machine for practice. After I understand the basics, I can add a Windows VM, a server VM, or a logging machine.
+          </p>
+          <h2>Snapshots</h2>
+          <p>Before changing a VM, I take a snapshot. If I break something, I can return to a known state. This makes experimenting less stressful.</p>
+          <p>
+            Snapshots are also useful before installing tools, changing firewall rules, or practicing security exercises. They let me compare before and after behavior.
+          </p>
+          <h2>What I document</h2>
+          <ul>
+            <li>VM names and operating systems.</li>
+            <li>IP addresses and network mode.</li>
+            <li>Tools installed.</li>
+            <li>Commands used and results observed.</li>
+          </ul>
+          <h2>Safety rules</h2>
+          <ul>
+            <li>Keep intentionally vulnerable machines isolated.</li>
+            <li>Do not bridge unsafe lab machines to a real network.</li>
+            <li>Only download tools and images from trusted sources.</li>
+            <li>Record changes so the lab can be rebuilt later.</li>
+          </ul>
+          <h2>Learning outcome</h2>
+          <p>The lab teaches networking, Linux, scanning, logs, and troubleshooting in one place. It also gives me portfolio evidence because every lab can become a write-up.</p>
+          <p>
+            A good lab write-up can show more than tool usage. It can show planning, network design, safe boundaries, troubleshooting, and communication skills.
+          </p>
+        </article>
+      </main>
+      <div data-component="footer"></div>
+    </div>
+    <script src="../assets/js/main.js" defer></script>
+  </body>
+</html>

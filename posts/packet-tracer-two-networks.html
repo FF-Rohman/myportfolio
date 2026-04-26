@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Packet Tracer lab connecting two networks with one router.">
+    <title>Packet Tracer Lab: Two Networks With One Router | FF Rohman</title>
+    <link rel="icon" type="image/png" href="../assets/img/favicon.png">
+    <link rel="apple-touch-icon" href="../assets/img/apple-touch-icon.png">
+    <link rel="stylesheet" href="../assets/css/styles.css">
+  </head>
+  <body>
+    <div class="site-shell">
+      <div data-component="navbar"></div>
+      <main id="main-content" class="article-page">
+        <article class="article reveal">
+          <a class="back-link" href="../blog.html">Back to blog</a>
+          <p class="eyebrow">Labs · 2025-12-27</p>
+          <h1>Packet Tracer Lab: Two Networks With One Router</h1>
+          <p class="article__intro">This lab helped me understand why different subnets need a router to communicate.</p>
+          <h2>Topology</h2>
+          <p>I used two PCs, two switches, and one router. LAN A used <code>192.168.10.0/24</code>. LAN B used <code>192.168.20.0/24</code>.</p>
+          <p>
+            The point of the topology is to make two separate networks. If both PCs are in the same subnet, routing is not being tested. By using two different subnets, I can see why the router is required.
+          </p>
+          <h2>Configuration idea</h2>
+          <p>Each router interface gets an IP address in its connected subnet. Each PC uses the router interface in its subnet as the default gateway.</p>
+          <p>
+            For example, the router interface connected to LAN A might be <code>192.168.10.1</code>. PC A might be <code>192.168.10.10</code> with gateway <code>192.168.10.1</code>. LAN B follows the same idea with <code>192.168.20.1</code> as the gateway.
+          </p>
+          <h2>Testing</h2>
+          <p>First I pinged within the same LAN. Then I pinged across LANs. If cross-network ping failed, I checked IP addresses, gateway settings, interface status, and subnet masks.</p>
+          <h2>Troubleshooting order</h2>
+          <ol>
+            <li>Check whether each PC can ping its own gateway.</li>
+            <li>Check whether router interfaces are up.</li>
+            <li>Check IP addresses and subnet masks.</li>
+            <li>Check whether each PC has the correct default gateway.</li>
+            <li>Try cross-LAN ping again and document the result.</li>
+          </ol>
+          <h2>Why this lab matters</h2>
+          <p>
+            This small lab teaches the foundation of routing. Larger networks still depend on the same idea: devices send remote traffic to a router, and routers move packets between networks.
+          </p>
+          <h2>Lesson learned</h2>
+          <p>Routing is easier to understand when I draw the topology and label every interface. A missing gateway or wrong subnet mask can break the whole lab.</p>
+        </article>
+      </main>
+      <div data-component="footer"></div>
+    </div>
+    <script src="../assets/js/main.js" defer></script>
+  </body>
+</html>

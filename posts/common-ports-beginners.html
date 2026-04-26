@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Common ports beginners should know for networking and cybersecurity.">
+    <title>Common Ports Every Beginner Should Know | FF Rohman</title>
+    <link rel="icon" type="image/png" href="../assets/img/favicon.png">
+    <link rel="apple-touch-icon" href="../assets/img/apple-touch-icon.png">
+    <link rel="stylesheet" href="../assets/css/styles.css">
+  </head>
+  <body>
+    <div class="site-shell">
+      <div data-component="navbar"></div>
+      <main id="main-content" class="article-page">
+        <article class="article reveal">
+          <a class="back-link" href="../blog.html">Back to blog</a>
+          <p class="eyebrow">Security · 2026-02-14</p>
+          <h1>Common Ports Every Beginner Should Know</h1>
+          <p class="article__intro">Ports help identify which service traffic is trying to reach. Recognizing common ports makes packet captures and scan results easier to read.</p>
+          <h2>Useful ports</h2>
+          <ul>
+            <li><code>22</code>: SSH for remote terminal access.</li>
+            <li><code>53</code>: DNS name resolution.</li>
+            <li><code>80</code>: HTTP web traffic.</li>
+            <li><code>443</code>: HTTPS encrypted web traffic.</li>
+            <li><code>25</code>, <code>587</code>, <code>993</code>: common email-related ports.</li>
+          </ul>
+          <h2>Why ports exist</h2>
+          <p>
+            An IP address identifies a host, but a port identifies a service on that host. A single server can run a web service, SSH service, and DNS service at the same time because each service listens on a different port.
+          </p>
+          <p>
+            When a client connects to a website over HTTPS, it usually connects to TCP port <code>443</code>. When an administrator connects with SSH, the destination is usually TCP port <code>22</code>. The port helps the operating system deliver the traffic to the right application.
+          </p>
+          <h2>Security meaning</h2>
+          <p>An open port is not automatically bad. It means a service may be reachable. The security question is whether that service is expected, updated, configured safely, and exposed only where needed.</p>
+          <h2>How I review open ports</h2>
+          <ol>
+            <li>Identify the port number and protocol.</li>
+            <li>Map it to the likely service.</li>
+            <li>Ask whether that service should be exposed.</li>
+            <li>Check whether access should be limited by firewall rules.</li>
+            <li>Document the reason the port is open.</li>
+          </ol>
+          <h2>Practice</h2>
+          <p>When I run a scan in my own lab, I write down each open port, the likely service, and whether I expected it. That habit turns a port list into useful documentation.</p>
+        </article>
+      </main>
+      <div data-component="footer"></div>
+    </div>
+    <script src="../assets/js/main.js" defer></script>
+  </body>
+</html>

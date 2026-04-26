@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Git and GitHub basics for a beginner technical portfolio.">
+    <title>Git and GitHub Basics for My Portfolio | FF Rohman</title>
+    <link rel="icon" type="image/png" href="../assets/img/favicon.png">
+    <link rel="apple-touch-icon" href="../assets/img/apple-touch-icon.png">
+    <link rel="stylesheet" href="../assets/css/styles.css">
+  </head>
+  <body>
+    <div class="site-shell">
+      <div data-component="navbar"></div>
+      <main id="main-content" class="article-page">
+        <article class="article reveal">
+          <a class="back-link" href="../blog.html">Back to blog</a>
+          <p class="eyebrow">Tutorials · 2025-12-13</p>
+          <h1>Git and GitHub Basics for My Portfolio</h1>
+          <p class="article__intro">Git helps me track changes, and GitHub helps me share my work publicly.</p>
+          <h2>Workflow I use</h2>
+          <p>I edit files, check what changed, commit with a clear message, and push to GitHub. This creates a history of my learning and project improvements.</p>
+          <p>
+            Git is local version control. GitHub is a remote platform where I can store and share repositories. I can use Git without GitHub, but GitHub makes it easier to publish my work and show it to others.
+          </p>
+          <h2>Commands</h2>
+          <p><code>git status</code> shows changes. <code>git add</code> stages files. <code>git commit</code> records a snapshot. <code>git push</code> uploads the work.</p>
+          <h2>Simple workflow example</h2>
+          <ol>
+            <li>Edit a lab README file.</li>
+            <li>Run <code>git status</code> to see what changed.</li>
+            <li>Run <code>git add README.md</code> to stage the file.</li>
+            <li>Run <code>git commit -m "Document VLAN lab"</code>.</li>
+            <li>Run <code>git push</code> to upload the commit.</li>
+          </ol>
+          <h2>Portfolio habit</h2>
+          <p>For each project, I include a README with objective, setup, tools, screenshots, test results, and lessons learned. The README is often the first thing a recruiter sees.</p>
+          <h2>Commit message habit</h2>
+          <p>
+            A clear commit message explains the change in a few words. “Update files” is not very helpful. “Add Wireshark DNS lab notes” is better because it describes the work.
+          </p>
+          <h2>What I avoid</h2>
+          <ul>
+            <li>Committing passwords, API keys, or private information.</li>
+            <li>Uploading random files without explanation.</li>
+            <li>Leaving project READMEs empty.</li>
+          </ul>
+          <h2>Lesson learned</h2>
+          <p>Small commits with clear messages are easier to understand than one huge upload at the end.</p>
+        </article>
+      </main>
+      <div data-component="footer"></div>
+    </div>
+    <script src="../assets/js/main.js" defer></script>
+  </body>
+</html>

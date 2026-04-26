@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Basic firewall rules explained for cybersecurity beginners.">
+    <title>Basic Firewall Rules Explained | FF Rohman</title>
+    <link rel="icon" type="image/png" href="../assets/img/favicon.png">
+    <link rel="apple-touch-icon" href="../assets/img/apple-touch-icon.png">
+    <link rel="stylesheet" href="../assets/css/styles.css">
+  </head>
+  <body>
+    <div class="site-shell">
+      <div data-component="navbar"></div>
+      <main id="main-content" class="article-page">
+        <article class="article reveal">
+          <a class="back-link" href="../blog.html">Back to blog</a>
+          <p class="eyebrow">Security · 2026-01-17</p>
+          <h1>Basic Firewall Rules Explained</h1>
+          <p class="article__intro">A firewall rule is a decision about whether certain traffic should be allowed or blocked.</p>
+          <h2>Rule parts</h2>
+          <p>A basic rule usually includes source, destination, protocol, port, direction, and action. For example, allow TCP port 443 from internal clients to the internet.</p>
+          <p>
+            The source is where traffic comes from. The destination is where traffic is going. The protocol might be TCP, UDP, or ICMP. The action is usually allow or deny. Direction matters because inbound and outbound traffic can have different risks.
+          </p>
+          <h2>Default deny</h2>
+          <p>A common security approach is to block by default and allow only what is required. This is called least privilege. It reduces unnecessary exposure.</p>
+          <p>
+            Default deny can feel strict at first, but it makes rules easier to reason about. Instead of asking why something is open, the administrator must intentionally allow only the traffic that has a business or lab purpose.
+          </p>
+          <h2>Beginner example</h2>
+          <p>If a web server should only serve HTTPS, a rule may allow inbound TCP 443 and block other inbound traffic. If SSH is needed, it should be limited to trusted admin IP addresses.</p>
+          <h2>Rule order</h2>
+          <p>
+            Many firewalls process rules from top to bottom. This means rule order can change the result. A broad allow rule placed above a specific deny rule may make the deny rule useless. This is why firewall rules must be reviewed carefully.
+          </p>
+          <h2>Testing rules</h2>
+          <p>
+            After changing a rule, I should test the expected allowed traffic and the expected blocked traffic. A rule is not finished until I verify both sides.
+          </p>
+          <h2>Documentation habit</h2>
+          <p>Every rule should have a reason. I try to write what the rule allows, who needs it, and what would break if it were removed.</p>
+        </article>
+      </main>
+      <div data-component="footer"></div>
+    </div>
+    <script src="../assets/js/main.js" defer></script>
+  </body>
+</html>

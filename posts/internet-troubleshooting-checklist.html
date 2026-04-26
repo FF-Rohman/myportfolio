@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Beginner internet troubleshooting checklist for networking learners.">
+    <title>Troubleshooting Checklist When the Internet Is Not Working | FF Rohman</title>
+    <link rel="icon" type="image/png" href="../assets/img/favicon.png">
+    <link rel="apple-touch-icon" href="../assets/img/apple-touch-icon.png">
+    <link rel="stylesheet" href="../assets/css/styles.css">
+  </head>
+  <body>
+    <div class="site-shell">
+      <div data-component="navbar"></div>
+      <main id="main-content" class="article-page">
+        <article class="article reveal">
+          <a class="back-link" href="../blog.html">Back to blog</a>
+          <p class="eyebrow">Tutorials · 2025-12-06</p>
+          <h1>Troubleshooting Checklist When the Internet Is Not Working</h1>
+          <p class="article__intro">A checklist prevents me from skipping simple causes when something does not connect.</p>
+          <h2>Step by step</h2>
+          <ol>
+            <li>Check physical connection or Wi-Fi status.</li>
+            <li>Confirm the device has an IP address.</li>
+            <li>Check subnet mask, gateway, and DNS settings.</li>
+            <li>Ping the gateway.</li>
+            <li>Ping a public IP address.</li>
+            <li>Test DNS with a domain name.</li>
+            <li>Use traceroute if routing looks suspicious.</li>
+          </ol>
+          <h2>Why this order works</h2>
+          <p>
+            The order moves from local to remote. If the cable is unplugged, DNS tests do not matter yet. If the gateway cannot be reached, testing websites is too early. Each step depends on the previous step.
+          </p>
+          <h2>Example case</h2>
+          <p>
+            If a device can ping the gateway and can ping <code>8.8.8.8</code>, but cannot open websites by name, DNS becomes a strong suspect. If the device cannot ping the gateway, I should focus on local network settings first.
+          </p>
+          <h2>How I document results</h2>
+          <p>I write each test and result. For example: gateway ping works, public IP ping works, domain name fails. That points toward a DNS issue instead of a cable issue.</p>
+          <h2>Useful command examples</h2>
+          <ul>
+            <li><code>ip addr</code>: check local IP address on Linux.</li>
+            <li><code>ip route</code>: check default gateway on Linux.</li>
+            <li><code>ping gateway-ip</code>: test local gateway reachability.</li>
+            <li><code>nslookup example.com</code>: test DNS resolution.</li>
+            <li><code>traceroute example.com</code>: inspect path toward destination.</li>
+          </ul>
+          <h2>Lesson learned</h2>
+          <p>Good troubleshooting is organized. The checklist helps me move from simple local checks to wider network checks without guessing.</p>
+        </article>
+      </main>
+      <div data-component="footer"></div>
+    </div>
+    <script src="../assets/js/main.js" defer></script>
+  </body>
+</html>

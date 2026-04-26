@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="A repeatable template for documenting networking labs.">
+    <title>How I Document a Networking Lab | FF Rohman</title>
+    <link rel="icon" type="image/png" href="../assets/img/favicon.png">
+    <link rel="apple-touch-icon" href="../assets/img/apple-touch-icon.png">
+    <link rel="stylesheet" href="../assets/css/styles.css">
+  </head>
+  <body>
+    <div class="site-shell">
+      <div data-component="navbar"></div>
+      <main id="main-content" class="article-page">
+        <article class="article reveal">
+          <a class="back-link" href="../blog.html">Back to blog</a>
+          <p class="eyebrow">Tutorials · 2025-12-20</p>
+          <h1>How I Document a Networking Lab</h1>
+          <p class="article__intro">A lab is more valuable when I can explain what I built, why I built it, and how I proved it worked.</p>
+          <h2>My template</h2>
+          <ul>
+            <li>Objective: what the lab is supposed to teach.</li>
+            <li>Topology: devices, links, VLANs, and IP ranges.</li>
+            <li>Configuration: commands or settings used.</li>
+            <li>Verification: ping, traceroute, screenshots, or packet capture.</li>
+            <li>Issues: mistakes and how I fixed them.</li>
+            <li>Lessons learned: what I understand better now.</li>
+          </ul>
+          <h2>Objective</h2>
+          <p>
+            The objective should be specific. “Learn networking” is too broad. “Configure two subnets and verify routing between them” is better because it tells the reader what the lab is supposed to prove.
+          </p>
+          <h2>Topology and addressing</h2>
+          <p>
+            I include a diagram or simple table with device names, interfaces, IP addresses, subnet masks, and gateways. This makes the lab easier to understand before reading any commands.
+          </p>
+          <h2>Verification</h2>
+          <p>
+            Verification is where I prove the lab worked. A screenshot alone is not enough. I explain what I tested, what result I expected, what result I got, and what that means.
+          </p>
+          <h2>Why it matters</h2>
+          <p>Documentation shows thinking. Recruiters and other learners can see the process, not only the final result. It also helps me repeat the lab later.</p>
+          <h2>Beginner mistake</h2>
+          <p>
+            A common mistake is only writing the successful final command. Good documentation also includes problems. Explaining a mistake and the fix often shows stronger learning than a perfect-looking lab.
+          </p>
+        </article>
+      </main>
+      <div data-component="footer"></div>
+    </div>
+    <script src="../assets/js/main.js" defer></script>
+  </body>
+</html>

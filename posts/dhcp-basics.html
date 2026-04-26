@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="DHCP basics for beginner networking students.">
+    <title>DHCP Basics: How Devices Get IP Addresses | FF Rohman</title>
+    <link rel="icon" type="image/png" href="../assets/img/favicon.png">
+    <link rel="apple-touch-icon" href="../assets/img/apple-touch-icon.png">
+    <link rel="stylesheet" href="../assets/css/styles.css">
+  </head>
+  <body>
+    <div class="site-shell">
+      <div data-component="navbar"></div>
+      <main id="main-content" class="article-page">
+        <article class="article reveal">
+          <a class="back-link" href="../blog.html">Back to blog</a>
+          <p class="eyebrow">Networking · 2026-03-07</p>
+          <h1>DHCP Basics: How Devices Get IP Addresses</h1>
+          <p class="article__intro">DHCP automatically gives devices network settings so users do not have to configure everything manually.</p>
+          <h2>What DHCP provides</h2>
+          <p>A DHCP server can give a device an IP address, subnet mask, default gateway, DNS server, and lease time. These settings allow the device to communicate locally and reach other networks.</p>
+          <p>
+            DHCP is useful because it reduces manual work. In a network with many devices, manually assigning IP addresses would be slow and error-prone. DHCP keeps addressing more organized by leasing addresses from a defined pool.
+          </p>
+          <h2>The DORA process</h2>
+          <p>I remember the process as Discover, Offer, Request, Acknowledge. The client looks for a server, the server offers an address, the client requests it, and the server confirms the lease.</p>
+          <p>
+            The client starts without knowing where the DHCP server is, so the first message is broadcast on the local network. This is why DHCP normally works inside a local network segment unless a DHCP relay is configured.
+          </p>
+          <h2>Common problems</h2>
+          <ul>
+            <li>No DHCP server is reachable.</li>
+            <li>The address pool is full.</li>
+            <li>The wrong gateway or DNS server is assigned.</li>
+            <li>A static IP conflicts with a DHCP address.</li>
+          </ul>
+          <h2>How I troubleshoot DHCP</h2>
+          <p>
+            First, I check whether the device received an IP address. If it has an address like <code>169.254.x.x</code>, that usually means it failed to get a proper DHCP lease. Then I check whether other devices on the same network are getting addresses. If they are, the issue may be local to one device. If they are not, the DHCP service or network path may be the problem.
+          </p>
+          <h2>Static vs dynamic addressing</h2>
+          <p>
+            Dynamic addresses are good for normal client devices. Static addresses are often used for routers, servers, printers, and infrastructure devices that need predictable addresses. A beginner mistake is making everything static without documenting it, which can cause conflicts later.
+          </p>
+          <h2>Practice note</h2>
+          <p>In a lab, I compare automatic addressing with static addressing. This helps me understand what DHCP is doing in the background.</p>
+        </article>
+      </main>
+      <div data-component="footer"></div>
+    </div>
+    <script src="../assets/js/main.js" defer></script>
+  </body>
+</html>

@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="CIA triad explained with beginner cybersecurity examples.">
+    <title>CIA Triad: Confidentiality, Integrity, and Availability | FF Rohman</title>
+    <link rel="icon" type="image/png" href="../assets/img/favicon.png">
+    <link rel="apple-touch-icon" href="../assets/img/apple-touch-icon.png">
+    <link rel="stylesheet" href="../assets/css/styles.css">
+  </head>
+  <body>
+    <div class="site-shell">
+      <div data-component="navbar"></div>
+      <main id="main-content" class="article-page">
+        <article class="article reveal">
+          <a class="back-link" href="../blog.html">Back to blog</a>
+          <p class="eyebrow">Security · 2026-02-07</p>
+          <h1>CIA Triad: Confidentiality, Integrity, and Availability</h1>
+          <p class="article__intro">The CIA triad is one of the first security frameworks I learned. It gives me a simple way to think about what security is protecting.</p>
+          <h2>Confidentiality</h2>
+          <p>Confidentiality means only authorized people can access information. Passwords, encryption, permissions, and MFA all support confidentiality.</p>
+          <p>
+            A confidentiality failure happens when information is exposed to someone who should not see it. Examples include a leaked password, a public storage bucket containing private files, or a user account with too much access.
+          </p>
+          <h2>Integrity</h2>
+          <p>Integrity means data stays accurate and unchanged unless a trusted process changes it. File hashes, logging, backups, and change control help protect integrity.</p>
+          <p>
+            An integrity problem is not always about stealing data. It can be about changing data. If an attacker modifies account numbers, grades, logs, or configuration files, the data can no longer be trusted.
+          </p>
+          <h2>Availability</h2>
+          <p>Availability means systems and data are usable when needed. Backups, redundancy, monitoring, and patching can help reduce downtime.</p>
+          <p>
+            Availability matters because a secure system is not useful if nobody can use it. Power failure, hardware failure, denial-of-service attacks, and misconfiguration can all affect availability.
+          </p>
+          <h2>How I use it</h2>
+          <p>When looking at a security issue, I ask which part of the triad is affected. A leaked password affects confidentiality. Tampered data affects integrity. A service outage affects availability.</p>
+          <h2>Beginner practice</h2>
+          <p>
+            For each security story I read, I try to label the impact: confidentiality, integrity, availability, or more than one. This helps me think like a defender and explain risk more clearly.
+          </p>
+        </article>
+      </main>
+      <div data-component="footer"></div>
+    </div>
+    <script src="../assets/js/main.js" defer></script>
+  </body>
+</html>

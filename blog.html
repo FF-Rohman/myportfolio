@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="CCNA-focused networking and cybersecurity blog posts, tutorials, labs, and study notes by FF Rohman.">
+    <title>Blog | FF Rohman</title>
+    <link rel="icon" type="image/png" href="assets/img/favicon.png">
+    <link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
+    <link rel="stylesheet" href="assets/css/styles.css">
+  </head>
+  <body>
+    <div class="site-shell">
+      <div data-component="navbar"></div>
+
+      <main id="main-content" class="page">
+        <section class="section page-hero reveal">
+          <!-- <p class="eyebrow">posts.json</p> -->
+          <h1>CCNA study notes and lab write-ups</h1>
+          <p>These posts document networking, routing, switching, cybersecurity basics, and hands-on practice in a clear way for other learners and recruiters.</p>
+        </section>
+
+        <section class="section section--tight reveal">
+          <div class="filter-bar" aria-label="Blog categories">
+            <button class="filter-button is-active" data-category-filter="All" type="button">All</button>
+            <button class="filter-button" data-category-filter="Networking" type="button">Networking</button>
+            <button class="filter-button" data-category-filter="Labs" type="button">Labs</button>
+            <button class="filter-button" data-category-filter="Security" type="button">Security</button>
+            <button class="filter-button" data-category-filter="Tutorials" type="button">Tutorials</button>
+          </div>
+          <div class="post-list" data-posts-list></div>
+        </section>
+      </main>
+
+      <div data-component="footer"></div>
+    </div>
+
+    <script src="assets/js/main.js" defer></script>
+  </body>
+</html>

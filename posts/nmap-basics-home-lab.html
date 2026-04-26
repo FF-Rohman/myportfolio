@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Nmap basics practiced responsibly in a safe home lab.">
+    <title>Nmap Basics in a Safe Home Lab | FF Rohman</title>
+    <link rel="icon" type="image/png" href="../assets/img/favicon.png">
+    <link rel="apple-touch-icon" href="../assets/img/apple-touch-icon.png">
+    <link rel="stylesheet" href="../assets/css/styles.css">
+  </head>
+  <body>
+    <div class="site-shell">
+      <div data-component="navbar"></div>
+      <main id="main-content" class="article-page">
+        <article class="article reveal">
+          <a class="back-link" href="../blog.html">Back to blog</a>
+          <p class="eyebrow">Labs · 2026-01-10</p>
+          <h1>Nmap Basics in a Safe Home Lab</h1>
+          <p class="article__intro">Nmap is useful for learning, but it should be used only on systems I own or have clear permission to test.</p>
+          <h2>Lab goal</h2>
+          <p>The goal is to discover which hosts are active in my lab network and which ports are open on my own test machines.</p>
+          <p>
+            I keep the scope small and written down before scanning. For example, I might scan only <code>192.168.56.0/24</code> if that is my isolated virtual lab network. Written scope is a good habit because scanning outside permission is not acceptable.
+          </p>
+          <h2>Commands I practice</h2>
+          <p><code>nmap -sn 192.168.56.0/24</code> checks for live hosts. <code>nmap -sV target-ip</code> attempts to identify service versions. I record the command, target, date, and result.</p>
+          <p>
+            A host discovery scan answers “what machines appear to be online?” A service scan answers “what ports and services are reachable?” These are different questions, so I do not run commands blindly. I choose the command based on the question.
+          </p>
+          <h2>How I read results</h2>
+          <p>An open port tells me a service is reachable. I then ask whether I expected that service, whether it is needed, and whether it should be limited by a firewall.</p>
+          <h2>Example notes format</h2>
+          <ul>
+            <li>Target: lab Ubuntu VM.</li>
+            <li>IP address: <code>192.168.56.20</code>.</li>
+            <li>Open ports: <code>22/tcp</code> SSH.</li>
+            <li>Expected: yes, SSH was installed for remote admin practice.</li>
+            <li>Action: restrict SSH to lab network only.</li>
+          </ul>
+          <h2>Common mistake</h2>
+          <p>
+            A beginner mistake is treating Nmap output as an attack by itself. The tool is not the point. The value is learning what is exposed, why it is exposed, and how to reduce unnecessary exposure.
+          </p>
+          <h2>Important boundary</h2>
+          <p>I do not scan public systems without permission. The learning value comes from understanding my lab, not from creating risk for other people.</p>
+        </article>
+      </main>
+      <div data-component="footer"></div>
+    </div>
+    <script src="../assets/js/main.js" defer></script>
+  </body>
+</html>

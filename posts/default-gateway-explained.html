@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Default gateway explained in beginner-friendly language.">
+    <title>Default Gateway Explained Without Overcomplicating It | FF Rohman</title>
+    <link rel="icon" type="image/png" href="../assets/img/favicon.png">
+    <link rel="apple-touch-icon" href="../assets/img/apple-touch-icon.png">
+    <link rel="stylesheet" href="../assets/css/styles.css">
+  </head>
+  <body>
+    <div class="site-shell">
+      <div data-component="navbar"></div>
+      <main id="main-content" class="article-page">
+        <article class="article reveal">
+          <a class="back-link" href="../blog.html">Back to blog</a>
+          <p class="eyebrow">Networking · 2026-02-21</p>
+          <h1>Default Gateway Explained Without Overcomplicating It</h1>
+          <p class="article__intro">The default gateway is the next hop a device uses when the destination is outside the local network.</p>
+          <h2>Local vs remote traffic</h2>
+          <p>If two devices are in the same subnet, they can communicate locally. If the destination is in another subnet, the device sends the packet to its default gateway, usually a router.</p>
+          <p>
+            The device decides whether traffic is local by comparing its IP address, subnet mask, and the destination IP address. If the destination belongs to the same network, it tries to reach it directly. If not, it sends the traffic to the gateway.
+          </p>
+          <h2>Example</h2>
+          <p>A laptop with <code>192.168.1.25/24</code> may use <code>192.168.1.1</code> as its gateway. When it wants to reach a public website, it sends traffic to <code>192.168.1.1</code>, and the router forwards it onward.</p>
+          <p>
+            The gateway must be in the same local subnet as the device. If the laptop is <code>192.168.1.25/24</code>, a gateway like <code>192.168.2.1</code> would not make sense for that interface because the laptop cannot reach it directly.
+          </p>
+          <h2>Troubleshooting</h2>
+          <p>If local devices can ping each other but the internet does not work, the gateway is one of the first things I check. A wrong gateway can make the device feel disconnected from everything outside its subnet.</p>
+          <h2>Useful checks</h2>
+          <ul>
+            <li>Check the IP address and subnet mask.</li>
+            <li>Check the default route with <code>ip route</code> or the operating system network settings.</li>
+            <li>Ping the gateway address.</li>
+            <li>If the gateway responds, test an external IP address next.</li>
+          </ul>
+          <h2>Lesson learned</h2>
+          <p>
+            The default gateway is not just another setting. It is the path out of the local subnet. If it is missing or wrong, communication outside the local network will fail.
+          </p>
+        </article>
+      </main>
+      <div data-component="footer"></div>
+    </div>
+    <script src="../assets/js/main.js" defer></script>
+  </body>
+</html>

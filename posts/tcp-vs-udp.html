@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="TCP and UDP explained for beginner networking students.">
+    <title>TCP vs UDP: How I Remember the Difference | FF Rohman</title>
+    <link rel="icon" type="image/png" href="../assets/img/favicon.png">
+    <link rel="apple-touch-icon" href="../assets/img/apple-touch-icon.png">
+    <link rel="stylesheet" href="../assets/css/styles.css">
+  </head>
+  <body>
+    <div class="site-shell">
+      <div data-component="navbar"></div>
+      <main id="main-content" class="article-page">
+        <article class="article reveal">
+          <a class="back-link" href="../blog.html">Back to blog</a>
+          <p class="eyebrow">Networking · 2026-03-21</p>
+          <h1>TCP vs UDP: How I Remember the Difference</h1>
+          <p class="article__intro">TCP and UDP both move data using ports, but they make different tradeoffs between reliability and speed.</p>
+          <h2>TCP</h2>
+          <p>TCP is connection-oriented. Before data is sent, the client and server establish a connection using a handshake. TCP tracks delivery, orders data correctly, and retransmits missing pieces. That makes it useful for web pages, SSH, email, and file transfers.</p>
+          <p>
+            The TCP handshake is commonly described as SYN, SYN-ACK, and ACK. This means the client asks to start a connection, the server replies, and the client confirms. After that, the two sides can send data while TCP keeps track of sequence numbers and acknowledgements.
+          </p>
+          <h2>UDP</h2>
+          <p>UDP is connectionless. It sends data without setting up the same reliable session. That makes it faster and simpler, but the application must handle loss if it matters. DNS, video calls, streaming, and some games often use UDP.</p>
+          <p>
+            UDP does not mean “bad” or “unsafe” by itself. It means the protocol has less overhead. For real-time traffic, a small loss may be better than waiting too long for retransmission. A video call can handle a missed packet better than a large delay.
+          </p>
+          <h2>How I compare them</h2>
+          <ul>
+            <li>TCP cares more about reliable delivery.</li>
+            <li>UDP cares more about low delay and simple sending.</li>
+            <li>Both use port numbers so traffic reaches the correct service.</li>
+          </ul>
+          <h2>Real examples</h2>
+          <p>
+            SSH uses TCP because a remote terminal needs reliable ordered data. If commands or output arrived broken, the session would be frustrating. DNS often uses UDP because a small query and response can be handled quickly. If the response fails, the client can ask again.
+          </p>
+          <h2>Lab idea</h2>
+          <p>Capture DNS traffic and HTTPS traffic in Wireshark. DNS queries commonly show UDP, while HTTPS uses TCP unless newer protocols such as QUIC are involved. Seeing the packets makes the difference easier to remember.</p>
+          <h2>Beginner mistake</h2>
+          <p>
+            I used to think TCP means secure and UDP means insecure. That is not correct. Security depends on other protections too, such as encryption, authentication, and safe configuration.
+          </p>
+        </article>
+      </main>
+      <div data-component="footer"></div>
+    </div>
+    <script src="../assets/js/main.js" defer></script>
+  </body>
+</html>

@@ -1,0 +1,182 @@
+[
+  {
+    "title": "ISP Industrial Attachment Networking Notes",
+    "status": "Complete",
+    "description": "Documented practical networking experience from OneSky Communications Ltd., including router configuration, VLANs, DHCP/NAT, IP addressing, subnetting, monitoring, and troubleshooting.",
+    "objective": "Connect academic networking knowledge with real ISP operations and CCNA preparation.",
+    "steps": [
+      "Observed and practiced router configuration workflows.",
+      "Reviewed VLAN, DHCP, NAT, and IP addressing use in a service provider environment.",
+      "Practiced troubleshooting customer and internal network issues.",
+      "Documented tools, commands, and lessons learned from industrial training."
+    ],
+    "learning": "This project shows real-world exposure to ISP networking and explains how CCNA topics appear in operational environments.",
+    "tools": ["MikroTik RouterOS", "WinBox", "VLAN", "DHCP", "NAT", "Subnetting"],
+    "github": "https://github.com/ffrohman/isp-industrial-attachment-notes"
+  },
+  {
+    "title": "CCNA Preparation Lab Series",
+    "status": "In progress",
+    "description": "A structured lab series for CCNA topics including subnetting, switching, VLANs, inter-VLAN routing, static routing, DHCP, NAT, and troubleshooting.",
+    "objective": "Build exam-ready understanding through repeatable hands-on labs instead of only reading theory.",
+    "steps": [
+      "Create Packet Tracer labs by CCNA topic.",
+      "Write topology, addressing table, configuration notes, and verification steps.",
+      "Test connectivity with ping, traceroute, routing table checks, and packet inspection.",
+      "Record mistakes and fixes for future revision."
+    ],
+    "learning": "This project organizes CCNA preparation into portfolio-ready evidence of routing and switching practice.",
+    "tools": ["Cisco Packet Tracer", "CCNA", "Routing", "Switching", "VLAN"],
+    "github": "https://github.com/ffrohman/ccna-preparation-labs"
+  },
+  {
+    "title": "Home Network Documentation and Security Review",
+    "status": "Complete",
+    "description": "Mapped a small home network, documented IP ranges, connected devices, router settings, and basic security improvements.",
+    "objective": "Understand how a real small network is organized and practice writing clear network documentation.",
+    "steps": [
+      "Listed network devices and connection types.",
+      "Recorded private IP range, gateway, DNS, and DHCP scope.",
+      "Created a simple topology diagram.",
+      "Reviewed Wi-Fi name, password strength, router admin access, and guest network settings."
+    ],
+    "learning": "This project connects theory with a real environment. It shows subnetting, gateway, DHCP, wireless security, and documentation skills in one practical example.",
+    "tools": ["Router admin panel", "draw.io", "IP addressing", "Markdown"],
+    "github": "https://github.com/ffrohman/home-network-documentation"
+  },
+  {
+    "title": "Packet Tracer Two-LAN Routing Lab",
+    "status": "Complete",
+    "description": "Built two separate LANs connected by a router and verified that devices could communicate across subnets.",
+    "objective": "Practice IP addressing, default gateways, router interfaces, and basic connectivity testing.",
+    "steps": [
+      "Created two LANs with PCs, switches, and one router.",
+      "Assigned IP ranges 192.168.10.0/24 and 192.168.20.0/24.",
+      "Configured router interfaces as gateways for each LAN.",
+      "Tested local and cross-network pings, then documented troubleshooting steps."
+    ],
+    "learning": "The lab makes routing visible. It helped me understand why devices in different subnets need a gateway.",
+    "tools": ["Cisco Packet Tracer", "Subnetting", "Routing", "Ping"],
+    "github": "https://github.com/ffrohman/packet-tracer-two-lan-routing"
+  },
+  {
+    "title": "VLAN Segmentation Lab",
+    "status": "In progress",
+    "description": "Designed a switch lab with separate student, admin, and guest VLANs to understand traffic separation.",
+    "objective": "Learn why VLANs are used and how access ports and trunk ports behave in a small network.",
+    "steps": [
+      "Created VLAN 10, VLAN 20, and VLAN 30.",
+      "Assigned access ports to different VLANs.",
+      "Configured a trunk link between switches.",
+      "Tested which devices could communicate before and after routing was added."
+    ],
+    "learning": "This project shows how one physical switch can support multiple logical networks and why segmentation matters.",
+    "tools": ["Cisco Packet Tracer", "VLANs", "Trunk ports", "Switching"],
+    "github": "https://github.com/ffrohman/vlan-segmentation-lab"
+  },
+  {
+    "title": "Wireshark DNS Traffic Analysis",
+    "status": "Complete",
+    "description": "Captured DNS traffic and explained how a domain name is resolved into an IP address.",
+    "objective": "Practice packet capture, display filters, and protocol analysis.",
+    "steps": [
+      "Started a capture on the active network interface.",
+      "Used the dns display filter to reduce noise.",
+      "Visited safe websites and observed DNS queries and responses.",
+      "Documented query name, response address, and packet flow."
+    ],
+    "learning": "The project helped me see that DNS is not only a theory topic. It is visible in packet captures and useful for troubleshooting.",
+    "tools": ["Wireshark", "DNS", "Packet analysis", "Screenshots"],
+    "github": "https://github.com/ffrohman/wireshark-dns-analysis"
+  },
+  {
+    "title": "Nmap Local Network Discovery Lab",
+    "status": "Complete",
+    "description": "Used Nmap in a safe local lab to discover live hosts and identify open services.",
+    "objective": "Learn responsible scanning and understand what open ports can reveal about a system.",
+    "steps": [
+      "Defined a lab-only target range.",
+      "Ran host discovery to identify active machines.",
+      "Scanned selected lab hosts for open ports.",
+      "Compared scan results with expected services."
+    ],
+    "learning": "This project shows the difference between scanning responsibly in a lab and scanning systems without permission. It also builds service recognition skills.",
+    "tools": ["Nmap", "Linux", "TCP/IP", "Markdown"],
+    "github": "https://github.com/ffrohman/nmap-local-discovery-lab"
+  },
+  {
+    "title": "Linux Networking Commands Cheat Sheet",
+    "status": "Complete",
+    "description": "Created a practical reference for Linux commands used during networking and cybersecurity labs.",
+    "objective": "Build confidence using the Linux terminal for IP checks, connectivity tests, DNS checks, and log review.",
+    "steps": [
+      "Grouped commands by purpose.",
+      "Tested commands such as ip addr, ping, traceroute, ss, and dig.",
+      "Added example outputs and notes about what each command proves.",
+      "Converted the notes into a clean README."
+    ],
+    "learning": "The project turns repeated terminal practice into a reusable study resource for future labs.",
+    "tools": ["Linux", "Terminal", "Networking commands", "Markdown"],
+    "github": "https://github.com/ffrohman/linux-networking-cheatsheet"
+  },
+  {
+    "title": "Firewall Rules Lab",
+    "status": "Planned",
+    "description": "A small lab for allowing and blocking traffic by port, source, and destination.",
+    "objective": "Understand firewall logic and the idea of least privilege.",
+    "steps": [
+      "Create a test service on a lab machine.",
+      "Allow only the required port.",
+      "Block unnecessary inbound traffic.",
+      "Verify behavior with connection tests and packet captures."
+    ],
+    "learning": "This project will help explain why firewall rules need a clear purpose and how overly open rules increase risk.",
+    "tools": ["Linux firewall", "UFW", "Nmap", "Wireshark"],
+    "github": "https://github.com/ffrohman/beginner-firewall-rules-lab"
+  },
+  {
+    "title": "Cybersecurity Home Lab Setup",
+    "status": "In progress",
+    "description": "Built a small isolated virtual lab for practicing Linux, scanning, logging, and safe security exercises.",
+    "objective": "Create a repeatable environment for learning without touching real production systems.",
+    "steps": [
+      "Created isolated virtual network settings.",
+      "Installed Linux VMs for workstation and target practice.",
+      "Took snapshots before risky changes.",
+      "Documented VM names, IP addresses, and tool versions."
+    ],
+    "learning": "The lab supports long-term practice and gives structure to future portfolio write-ups.",
+    "tools": ["VirtualBox", "Linux", "Snapshots", "Lab notes"],
+    "github": "https://github.com/ffrohman/cybersecurity-home-lab"
+  },
+  {
+    "title": "Phishing Awareness Checklist",
+    "status": "Complete",
+    "description": "Created a practical checklist for reviewing suspicious messages safely.",
+    "objective": "Explain phishing indicators in a way non-experts and new learners can understand.",
+    "steps": [
+      "Listed common warning signs such as urgency, mismatched links, and suspicious attachments.",
+      "Created a safe review process that avoids clicking unknown links.",
+      "Added examples of what to document during analysis.",
+      "Wrote a clear security awareness guide."
+    ],
+    "learning": "This project shows communication skill, which matters in cybersecurity because users need clear guidance.",
+    "tools": ["Security awareness", "Markdown", "Checklist writing"],
+    "github": "https://github.com/ffrohman/phishing-awareness-checklist"
+  },
+  {
+    "title": "Static Cybersecurity Portfolio Website",
+    "status": "Complete",
+    "description": "Built this GitHub Pages-compatible portfolio to document learning, blogs, projects, and contact information.",
+    "objective": "Create a personal brand while keeping the site simple, fast, and fully static.",
+    "steps": [
+      "Built pages with HTML, CSS, and vanilla JavaScript.",
+      "Separated blog metadata into JSON.",
+      "Created reusable navbar and footer components.",
+      "Designed a responsive dark theme with subtle terminal-inspired UI."
+    ],
+    "learning": "This project proves frontend fundamentals, static deployment understanding, content organization, and long-term portfolio planning.",
+    "tools": ["HTML", "CSS", "JavaScript", "GitHub Pages"],
+    "github": "https://github.com/ffrohman/static-cybersecurity-portfolio"
+  }
+]
