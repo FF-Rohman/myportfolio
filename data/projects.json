@@ -11,8 +11,7 @@
       "Documented tools, commands, and lessons learned from industrial training."
     ],
     "learning": "This project shows real-world exposure to ISP networking and explains how CCNA topics appear in operational environments.",
-    "tools": ["MikroTik RouterOS", "WinBox", "VLAN", "DHCP", "NAT", "Subnetting"],
-    "github": "https://github.com/ffrohman/isp-industrial-attachment-notes"
+    "tools": ["MikroTik RouterOS", "WinBox", "VLAN", "DHCP", "NAT", "Subnetting"]
   },
   {
     "title": "CCNA Preparation Lab Series",
@@ -26,8 +25,7 @@
       "Record mistakes and fixes for future revision."
     ],
     "learning": "This project organizes CCNA preparation into portfolio-ready evidence of routing and switching practice.",
-    "tools": ["Cisco Packet Tracer", "CCNA", "Routing", "Switching", "VLAN"],
-    "github": "https://github.com/ffrohman/ccna-preparation-labs"
+    "tools": ["Cisco Packet Tracer", "CCNA", "Routing", "Switching", "VLAN"]
   },
   {
     "title": "Home Network Documentation and Security Review",
@@ -41,8 +39,7 @@
       "Reviewed Wi-Fi name, password strength, router admin access, and guest network settings."
     ],
     "learning": "This project connects theory with a real environment. It shows subnetting, gateway, DHCP, wireless security, and documentation skills in one practical example.",
-    "tools": ["Router admin panel", "draw.io", "IP addressing", "Markdown"],
-    "github": "https://github.com/ffrohman/home-network-documentation"
+    "tools": ["Router admin panel", "draw.io", "IP addressing", "Markdown"]
   },
   {
     "title": "Packet Tracer Two-LAN Routing Lab",
@@ -56,8 +53,7 @@
       "Tested local and cross-network pings, then documented troubleshooting steps."
     ],
     "learning": "The lab makes routing visible. It helped me understand why devices in different subnets need a gateway.",
-    "tools": ["Cisco Packet Tracer", "Subnetting", "Routing", "Ping"],
-    "github": "https://github.com/ffrohman/packet-tracer-two-lan-routing"
+    "tools": ["Cisco Packet Tracer", "Subnetting", "Routing", "Ping"]
   },
   {
     "title": "VLAN Segmentation Lab",
@@ -71,8 +67,7 @@
       "Tested which devices could communicate before and after routing was added."
     ],
     "learning": "This project shows how one physical switch can support multiple logical networks and why segmentation matters.",
-    "tools": ["Cisco Packet Tracer", "VLANs", "Trunk ports", "Switching"],
-    "github": "https://github.com/ffrohman/vlan-segmentation-lab"
+    "tools": ["Cisco Packet Tracer", "VLANs", "Trunk ports", "Switching"]
   },
   {
     "title": "Wireshark DNS Traffic Analysis",
@@ -86,8 +81,7 @@
       "Documented query name, response address, and packet flow."
     ],
     "learning": "The project helped me see that DNS is not only a theory topic. It is visible in packet captures and useful for troubleshooting.",
-    "tools": ["Wireshark", "DNS", "Packet analysis", "Screenshots"],
-    "github": "https://github.com/ffrohman/wireshark-dns-analysis"
+    "tools": ["Wireshark", "DNS", "Packet analysis", "Screenshots"]
   },
   {
     "title": "Nmap Local Network Discovery Lab",
@@ -101,8 +95,7 @@
       "Compared scan results with expected services."
     ],
     "learning": "This project shows the difference between scanning responsibly in a lab and scanning systems without permission. It also builds service recognition skills.",
-    "tools": ["Nmap", "Linux", "TCP/IP", "Markdown"],
-    "github": "https://github.com/ffrohman/nmap-local-discovery-lab"
+    "tools": ["Nmap", "Linux", "TCP/IP", "Markdown"]
   },
   {
     "title": "Linux Networking Commands Cheat Sheet",
@@ -116,8 +109,7 @@
       "Converted the notes into a clean README."
     ],
     "learning": "The project turns repeated terminal practice into a reusable study resource for future labs.",
-    "tools": ["Linux", "Terminal", "Networking commands", "Markdown"],
-    "github": "https://github.com/ffrohman/linux-networking-cheatsheet"
+    "tools": ["Linux", "Terminal", "Networking commands", "Markdown"]
   },
   {
     "title": "Firewall Rules Lab",
@@ -131,8 +123,7 @@
       "Verify behavior with connection tests and packet captures."
     ],
     "learning": "This project will help explain why firewall rules need a clear purpose and how overly open rules increase risk.",
-    "tools": ["Linux firewall", "UFW", "Nmap", "Wireshark"],
-    "github": "https://github.com/ffrohman/beginner-firewall-rules-lab"
+    "tools": ["Linux firewall", "UFW", "Nmap", "Wireshark"]
   },
   {
     "title": "Cybersecurity Home Lab Setup",
@@ -146,8 +137,7 @@
       "Documented VM names, IP addresses, and tool versions."
     ],
     "learning": "The lab supports long-term practice and gives structure to future portfolio write-ups.",
-    "tools": ["VirtualBox", "Linux", "Snapshots", "Lab notes"],
-    "github": "https://github.com/ffrohman/cybersecurity-home-lab"
+    "tools": ["VirtualBox", "Linux", "Snapshots", "Lab notes"]
   },
   {
     "title": "Phishing Awareness Checklist",
@@ -161,22 +151,20 @@
       "Wrote a clear security awareness guide."
     ],
     "learning": "This project shows communication skill, which matters in cybersecurity because users need clear guidance.",
-    "tools": ["Security awareness", "Markdown", "Checklist writing"],
-    "github": "https://github.com/ffrohman/phishing-awareness-checklist"
+    "tools": ["Security awareness", "Markdown", "Checklist writing"]
   },
   {
     "title": "Static Cybersecurity Portfolio Website",
     "status": "Complete",
-    "description": "Built this GitHub Pages-compatible portfolio to document learning, blogs, projects, and contact information.",
+    "description": "Built this GitHub Pages-compatible portfolio to document learning, projects, and contact information.",
     "objective": "Create a personal brand while keeping the site simple, fast, and fully static.",
     "steps": [
       "Built pages with HTML, CSS, and vanilla JavaScript.",
-      "Separated blog metadata into JSON.",
+      "Separated project metadata into JSON.",
       "Created reusable navbar and footer components.",
       "Designed a responsive dark theme with subtle terminal-inspired UI."
     ],
     "learning": "This project proves frontend fundamentals, static deployment understanding, content organization, and long-term portfolio planning.",
-    "tools": ["HTML", "CSS", "JavaScript", "GitHub Pages"],
-    "github": "https://github.com/ffrohman/static-cybersecurity-portfolio"
+    "tools": ["HTML", "CSS", "JavaScript", "GitHub Pages"]
   }
 ]

@@ -1,6 +1,6 @@
 # Static Networking and Cybersecurity Portfolio
 
-This is a fully static personal blog and portfolio for GitHub Pages. It uses only HTML, CSS, and vanilla JavaScript.
+This is a fully static personal portfolio for GitHub Pages. It uses only HTML, CSS, and vanilla JavaScript.
 
 ## Folder Structure
 
@@ -14,14 +14,8 @@ This is a fully static personal blog and portfolio for GitHub Pages. It uses onl
 │   ├── footer.html
 │   └── navbar.html
 ├── data/
-│   ├── posts.json
 │   └── projects.json
-├── posts/
-│   ├── linux-terminal-notes.html
-│   ├── subnetting-basics.html
-│   └── wireshark-first-capture.html
 ├── about.html
-├── blog.html
 ├── contact.html
 ├── index.html
 ├── projects.html
@@ -31,8 +25,6 @@ This is a fully static personal blog and portfolio for GitHub Pages. It uses onl
 ## Editing Content
 
 - Update GitHub, LinkedIn, and any custom copy in the HTML files and components.
-- Add blog metadata to `data/posts.json`.
-- Add each full article as a static HTML file in `posts/`.
 - Add portfolio items to `data/projects.json`.
 - Replace `assets/docs/resume.pdf` with your real resume PDF.
 - Replace the Formspree URL in `contact.html` with your own form endpoint.

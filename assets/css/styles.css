@@ -316,6 +316,7 @@ h3 {
 
 .portrait-panel img {
   width: min(100%, 360px);
+  height: auto;
   aspect-ratio: 1 / 1;
   object-fit: cover;
   border: 1px solid rgba(53, 210, 143, 0.35);
